@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>Custom button</title>
+    <style>
+      .my-button input {
+        background-color: red;
+      }
+    </style>
+    <script>
+      var ButtonPrototype = Object.create(HTMLElement.prototype);
+      ButtonPrototype.createdCallback = function() {
+
+        var shadow = this.createShadowRoot();
+
+        var styles = '<style> input { background-color: green; }</style>';
+        var html = '<div class="my-button"><input type="button" value="Click me"/></div>';
+
+        shadow.innerHTML = styles + html;
+      };
+      var MyButton = document.registerElement('my-button', {
+        prototype: ButtonPrototype
+      });
+    </script>
+  </head>
+  <body>
+    <my-button>Old text</my-button>
+  </body>
+</html>

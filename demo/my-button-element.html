@@ -1,0 +1,23 @@
+<template id="my-button-tpl">
+  <style>
+    input {
+      background-color: pink;
+    }
+  </style>
+  <div>
+    <input type="button" value="Click me!"/>
+  </div>
+</template>
+<script>
+  var importDoc = document.currentScript.ownerDocument; //importee
+  var ButtonPrototype = Object.create(HTMLElement.prototype);
+  ButtonPrototype.createdCallback = function() {
+
+    var tpl = importDoc.querySelector('#my-button-tpl');
+    var clone = document.importNode(tpl.content, true);
+    this.createShadowRoot().appendChild(clone);
+  };
+  var MyButton = document.registerElement('my-button', {
+    prototype: ButtonPrototype
+  });
+</script>

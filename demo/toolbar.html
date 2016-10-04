@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>Toolbar</title>
+
+    <style shim-shadowdom>
+
+      body {
+        font-family: sans-serif;
+      }
+
+      core-toolbar {
+        background-color: #CFA0E9;
+      }
+
+      core-toolbar.dark-theme {
+        background-color: #7D25AC;
+        color: #f1f1f1;
+        fill: #f1f1f1;
+      }
+
+    </style>
+
+    <script src="bower_components/webcomponentsjs/webcomponents.min.js"></script>
+
+    <link rel="import" href="bower_components/core-toolbar/core-toolbar.html">
+    <link rel="import" href="bower_components/core-icon-button/core-icon-button.html">
+    <link rel="import" href="bower_components/core-media-query/core-media-query.html">
+
+  </head>
+  <body>
+    <core-toolbar class="dark-theme">
+      <core-icon-button icon="menu"></core-icon-button>
+      <span flex>Toolbar: dark-theme</span>
+      <core-icon-button icon="refresh"></core-icon-button>
+      <core-icon-button icon="add"></core-icon-button>
+    </core-toolbar>
+  </body>
+</html>

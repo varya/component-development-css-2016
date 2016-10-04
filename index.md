@@ -39,7 +39,7 @@ style: |
 
 ---
 
-# CSS components, version 2016
+# Component development<br/>in CSS,<br/>2016
 
 *by [Varya Stepanova](http://varya.me/) from [Zalando](https://tech.zalando.com/)*
 
@@ -56,7 +56,7 @@ style: |
 .cover h2 {
   color: #fff;
   font-weight: bold;
-  font-size: 90px;
+  font-size: 85px;
   line-height: 1.25em;
   text-shadow: 5px 10px 15px rgba(0,0,0,1);
 }
@@ -1017,6 +1017,90 @@ But the reason of the need to use the metholodogy is drawbacks of CSS. And the r
 way would be to fix the problems itself.
 -->
 
+## CSS modules
+{: .shout }
+
+## Glen<br/><span class="surname">Maddern</span>
+{: .maddern }
+
+<!--
+-->
+
+<style>
+
+.maddern {
+  position: relative;
+  background-image: url(pictures/glen-maddern.jpg);
+  background-size: auto 640px;
+}
+
+.maddern h2 {
+  position: absolute;
+  right: 125px;
+  top: 65px;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.maddern h2 .surname {
+  color: white;
+}
+
+</style>
+
+## Manual CSS
+
+### page.html
+
+```html
+<h1 class="title">An example heading</h1>
+```
+
+### styles.css
+
+```css
+.title {
+  background-color: red;
+}
+```
+
+## Automated with CSS modules
+
+### page.js -> page.html
+
+```js
+import styles from "./styles.css";
+
+element.innerHTML = 
+  `<h1 class="${styles.title}">
+     An example heading
+  </h1>`;
+```
+
+## Generated with CSS modules
+
+### page.html
+
+```html
+<h1 class="_styles__title_309571057">
+  An example heading
+</h1>
+```
+
+### styles.css
+
+```css
+._styles__title_309571057 {
+  background-color: red;
+}
+```
+
+## Still not ideal
+
+* Requires generating
+* Limits development patterns
+* The rusult is still our old CSS
+
 ## Web Components
 {: .shout }
 
@@ -1024,6 +1108,25 @@ way would be to fix the problems itself.
 Here I introduce you another concept called Web Components. This is not the methodology but
 a new technology, a new standard which will hopefully solve the problems we considered.
 -->
+
+## W3C
+{: .w3c .}
+
+<style>
+
+.w3c {
+  position: relative;
+  background-image: url(pictures/w3c.png);
+  background-size: auto 640px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.w3c h2 {
+  display: none;
+}
+
+</style>
 
 ## Technologies behind
 {: .wc-behind }
@@ -1199,7 +1302,7 @@ This is all about web components
 
 -->
 
-## SGDD
+## Style-Guide Driven Development
 {: .shout }
 
 ## Living Styleguides
@@ -1273,162 +1376,11 @@ http://styleguide.sc5.io
 
 ## Killer features
 
-* {: .next }CSS / SCSS / SASS / LESS
-* {: .next }Related variables
-* {: .next }Live editting
-* {: .next }Angular directives
-* {: .next }Easy to integrate
-
-## How it works
-{: .how-scheme }
-
-<div class="source" markdown="1">
-
-    my-styles/
-      atoms/
-        header.sass
-        menu.sass
-        footer.sass
-      common.sass
-      index.sass
-      products.sass
-
-</div>
-
-<div class="process" markdown="1">
-
-* CLI
-* Gulp
-* Grunt
-
-</div>
-
-<div class="stream">Gulp Stream</div>
-
-<div class="screenshot browser">
-  <img src="pictures/screenshot.png" class="screenshot__image">
-</div>
-
-<style>
-.how-scheme>div {
-  padding: 50px 100px;
-  height: 590px;
-  width: 875px;
-}
-.how-scheme pre code {
-  background: #fff;
-  padding: 0;
-}
-.how-scheme::after {
-  display: none;
-}
-.how-scheme h2 {
-  display: none;
-}
-.how-scheme .source {
-  display: inline-block;
-  height: 300px;
-  border: #CCC 2px solid;
-  border-radius: 0.5em;
-  padding: 0.5em 0.5em 0;
-  position: relative;
-  vertical-align: middle;
-}
-.how-scheme .source code {
-  font-size: 22px;
-  line-height: 1.5em;
-}
-.how-scheme .source pre {
-  margin-bottom: 0;
-}
-.how-scheme .source::after {
-  content: "+";
-  display: inline-block;
-  position: absolute;
-  font-size: 60px;
-  line-height: 60px;
-  right: -50px;
-  top: 40px;
-}
-
-.how-scheme .process {
-  display: inline-block;
-  margin-left: 50px;
-  vertical-align: top;
-  border: #CCC 2px solid;
-  border-radius: 0.5em;
-  padding: 0.5em 0.5em 0 1.5em;
-  position: relative;
-}
-.how-scheme .process ul {
-  margin-bottom: 0.5em;
-}
-.how-scheme .process::after {
-  content: "";
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border-top: 20px solid transparent;
-  border-left: 40px solid #ff9d00;
-  border-bottom: 20px solid transparent;
-  position: absolute;
-  right: -50px;
-  top: 50px;
-}
-.how-scheme .stream {
-  display: inline-block;
-  width: 200px;
-  height: 125px;
-  margin-left: 50px;
-  vertical-align: top;
-  border: #CCC 2px solid;
-  border-radius: 0.5em;
-  padding: 0.5em;
-  position: relative;
-  background-image:url(pictures/magic.png);
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-position: 100% 100%;
-}
-.how-scheme .stream::after {
-  content: "";
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border-right: 20px solid transparent;
-  border-top: 40px solid #ff9d00;
-  border-left: 20px solid transparent;
-  position: absolute;
-  bottom: -50px;
-  left: 50px;
-}
-.screenshot {
-  float: right;
-  margin-top: -100px;
-  margin-right: 60px;
-}
-.screenshot__image {
-  width: 450px;
-}
-.browser {
-  position: relative;
-  padding: 35px 5px 5px;
-  border-radius: 10px 10px 0 0;
-  background: #e2e2e2;
-}
-.how-scheme .screenshot::after {
-  content: "";
-  display: inline-block;
-  width: 0;
-  height: 0;
-  border-top: 35px solid transparent;
-  border-right: 70px solid #ff9d00;
-  border-bottom: 35px solid transparent;
-  position: absolute;
-  left: -80px;
-  top: 40px;
-}
-</style>
+* CSS / SCSS / SASS / LESS
+* Related variables
+* Live editting
+* Angular directives
+* Easy to integrate
 
 ## KSS Knyle Style Sheets
 {: .kss }
@@ -1518,15 +1470,45 @@ http://styleguide.sc5.io
 * Unit tests for UI
 * <b>Easier designer/developer/client collaboration</b>
 
-## Component development in CSS
+## Component development in CSS, 2016
 
 * Big CSS
 * BEM (SMACSS, OOCSS)
+* CSS modules
 * Web Components
-* SGDD
+* Style-Guide Driven Development
 
-### [varya.me/component-development-css](http://varya.me/component-development-css/)
+## Thank you
+{: .thanks }
 
-<!--
-I hope this was useful
--->
+Varya Stepanova, Zalando SE<br/>
+[@varya_en](https://twitter.com/varya_en){: .twitter }<br/>
+On the web: [varya.me](http://varya.me){: .web }
+
+### Slides: [varya.me/component-development-css-2016](http://varya.me/component-development-css-2016/)
+
+<style>
+.thanks h3 {
+  font-size: 38px;
+  margin-bottom: 0.5em;
+}
+.thanks .twitter
+{
+  text-decoration: none;
+  color: currentColor;
+  background: none;
+  border-bottom: 0;
+}
+.thanks .twitter::before
+{
+  content: "";
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  background-image:url('pictures/twitter-logo.png');
+  background-size: cover;
+  margin-right: 0.5em;
+  margin-bottom: -0.5em;
+}
+</style>
+

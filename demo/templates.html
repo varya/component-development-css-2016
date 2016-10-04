@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>HTML templates</title>
+    <script>
+      var ButtonPrototype = Object.create(HTMLElement.prototype);
+      ButtonPrototype.createdCallback = function() {
+
+        var tpl =document.querySelector('#my-button-tpl');
+        var clone = document.importNode(tpl.content, true);
+        this.createShadowRoot().appendChild(clone);
+      };
+      var MyButton = document.registerElement('my-button', {
+        prototype: ButtonPrototype
+      });
+    </script>
+  </head>
+  <body>
+    <template id="my-button-tpl">
+      <style>
+        input {
+          color: white;
+          background-color: blue;
+        }
+      </style>
+      <div>
+        <input type="button" value="Click me!"/>
+      </div>
+    </template>
+    <my-button>Old text</my-button>
+  </body>
+</html>

@@ -1,21 +1,19 @@
+auto: true
 safe: true
+server: true
 markdown: kramdown
-highlighter: pygments
+pygments: true
 permalink: /:title.html
-relative_permalinks: false
 
-default_theme: ribbon
-default_width: 792
-default_lang: en
+default_theme: bright
 default_body_class: list
 
 author:
-    name: Yours Truly
-    # url:  http://example.com/
+    name: Varya Stepanova
+    url:  http://varya.me
     company:
-        name: Famous Inc.
-        # url:  http://example.com/
+        name: Zalando SE
+        url:  https://tech.zalando.com/
 
-fork_url: https://github.com/shower/shower
+fork_url: https://github.com/varya/css-components-2016
 progress: true
-line_numbers: true

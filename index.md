@@ -39,9 +39,9 @@ style: |
 
 ---
 
-# Component development in CSS
+# CSS components, version 2016
 
-*by [Varya Stepanova](http://varya.me/) from [SC5 Online](http://sc5.io/)*
+*by [Varya Stepanova](http://varya.me/) from [Zalando](https://tech.zalando.com/)*
 
 ![](pictures/cover.jpg)
 
@@ -75,12 +75,12 @@ style: |
 {: .no-title }
 
 ### Now
-Senior Frontend Developer for SC5 Online
+Senior Frontend Developer for Zalando SE
 
 ### Before
-TMG (Amsterdam, the Netherlands); Yandex (Moscow, Russia)
+SC5 Online (Helsinki); TMG (Amsterdam, the Netherlands); Yandex&nbsp;(Moscow,&nbsp;Russia)
 
-###Area of expertise
+### Area of expertise
 Components on the web: libraries, SGDD, BEM. Techs: CSS, JavaScript, etc.
 
 <!--
@@ -279,7 +279,7 @@ In the web development you cannot create version 2, we provide changes little by
 So, the code should be maintainable for years
 -->
 
-##Is this good?
+## Is this good?
 
     H1 { color: blue }
     P EM { font-weight: bold }
@@ -430,7 +430,7 @@ People ask on Stackoverflow how to overwrite Bootsrtap
 These things can be in different files
 -->
 
-##Non-deterministic matches
+## Non-deterministic matches
 
     #content div div {
       float: left;
@@ -445,7 +445,7 @@ These things can be in different files
 ## Dependency management
 {: .dependency-management }
 
-###No dependencies, sorry
+### No dependencies, sorry
 
 <div class="next" markdown="1">
 ### But what about?
@@ -554,14 +554,14 @@ The methodology does not give change into the technology. It suggest a developer
 technology better.
 -->
 
-##OOCSS
+## OOCSS
 {: .shout }
 
 <!--
 The first methodology proposed was OOCSS, stands for Object Oriented CSS.
 -->
 
-##Nicole<br/>Sullivan
+## Nicole<br/>Sullivan
 {: .nicole }
 
 <!--
@@ -600,7 +600,7 @@ Another milestone is SMACCS, which is Scalable and Modular Architecture for CSS.
 This is a book, first published in 2009 but still available.
 -->
 
-##Jonathan<br/>Snook
+## Jonathan<br/>Snook
 {: .jonathan }
 
 <!--
@@ -705,7 +705,7 @@ world. So, I'll explain it in details.
 ### Harry<br/>Roberts
 {: .harry }
 
-###Nicolas<br/>Gallagher
+### Nicolas<br/>Gallagher
 {: .nicolas }
 
 <!--

@@ -1489,7 +1489,7 @@ On the web: [varya.me](http://varya.me){: .web }
 
 <style>
 .thanks h3 {
-  font-size: 38px;
+  font-size: 30px;
   margin-bottom: 0.5em;
 }
 .thanks .twitter

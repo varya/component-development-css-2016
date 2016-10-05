@@ -1099,7 +1099,7 @@ element.innerHTML =
 
 * Requires generating
 * Limits development patterns
-* The rusult is still our old CSS
+* The rueult is still our old CSS
 
 ## Web Components
 {: .shout }

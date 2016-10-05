@@ -39,7 +39,7 @@ style: |
 
 ---
 
-# Component development in CSS<br/>at 2016
+# Component development in CSS<br/> at 2016
 
 *by [Varya Stepanova](http://varya.me/) from [Zalando](https://tech.zalando.com/)*
 

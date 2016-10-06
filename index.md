@@ -391,7 +391,7 @@ So, here we see...
 
 <separator/>
 
-    .sidebar { /* Does is redefine `div.sidebar`?! */
+    .sidebar { /* Does it redefine `div.sidebar`?! */
       float: right;
     }
 {: .next }

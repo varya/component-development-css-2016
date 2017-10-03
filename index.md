@@ -41,7 +41,7 @@ style: |
 
 # Component development in CSS<br/> at 2016
 
-*by [Varya Stepanova](http://varya.me/) from [Zalando](https://tech.zalando.com/)*
+*by [Varya Stepanova](http://varya.me/) from [SC5](https://sc5.io/)*
 
 ![](pictures/cover.jpg)
 
@@ -75,10 +75,10 @@ style: |
 {: .no-title }
 
 ### Now
-Senior Frontend Developer for Zalando SE
+Senior Software Specialist at SC5 Online
 
 ### Before
-SC5 Online (Helsinki); TMG (Amsterdam, the Netherlands); Yandex&nbsp;(Moscow,&nbsp;Russia)
+TMG (Amsterdam, the Netherlands); Yandex&nbsp;(Moscow,&nbsp;Russia)
 
 ### Area of expertise
 Components on the web: libraries, SGDD, BEM. Techs: CSS, JavaScript, etc.
@@ -1481,7 +1481,7 @@ http://styleguide.sc5.io
 ## Thank you
 {: .thanks }
 
-Varya Stepanova, Zalando SE<br/>
+Varya Stepanova, SC5 Online<br/>
 [@varya_en](https://twitter.com/varya_en){: .twitter }<br/>
 On the web: [varya.me](http://varya.me){: .web }
 
